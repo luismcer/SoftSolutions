@@ -1,2 +1,84 @@
-<h1>Pages#nuevo_estacionamiento</h1>
-<p>Find me in app/views/pages/nuevo_estacionamiento.html.erb</p>
+
+
+<div class="container col-xs-6 center">
+			<div class="row main">
+				<div class="main-login main-center">
+           		<h4 class="title">Publique su Estacionamiento</h4>
+           		<hr />
+					<form class="form-horizontal" method="post" action="#">
+						
+						<div class="form-group">
+						    <h5>Dirección :</h5>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Nro de Calle / Avenida"/>
+                                    &nbsp;
+									            <select id="selectbasic" name="selectbasic" class="form-control">
+                                                <option value="1">Seleccione</option>
+                                                <option value="2">Surco</option>
+                                                <option value="3">Miraflores</option>
+                                                </select>
+
+								</div>
+								
+								&nbsp;
+								
+								<!-- <input type="submit" class="form-control" name="upload" id="upload" placeholder="Busque la foto de su estacionamiento" size="20">--> 
+								
+								<br/>
+								<h5>Ubique su estacionamiento en el mapa:</h5>
+								<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:280px;width:460px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https:/disclaimergenerator.net">disclaimer example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-12.1052081,-76.97092989999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-12.1052081,-76.97092989999999)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>La encalada, surco, Lima, Peru<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+								
+								
+								
+							</div>
+						</div>
+
+						<div class="form-group">
+						    <h3>Tarifa :</h3>
+							<div class="cols-sm-10">
+								
+								Por Hora: <input type="number" class="form-control" name="email" id="email"  placeholder="Soles x hora"/>
+								<br/>
+								Por Dia : <input type="number" class="form-control" name="email" id="email"  placeholder="Soles x dia"/>
+								<br/>
+								Por Mes: <input type="number" class="form-control" name="email" id="email"  placeholder="Soles x mes"/>
+							</div>
+						</div>
+
+
+
+
+						<div class="form-group">
+						    <h3>Capacidad Total:</h3>
+							<div class="cols-sm-10">
+								<input type="number" class="form-control" name="email" id="email"  placeholder="#Capacidad Total"/>
+							</div>
+						</div>
+
+
+						<div class="form-group">
+						    <h3>Características Adicionales :</h3>
+							<div class="cols-sm-10">
+
+                            <textarea cols="50" rows="5">
+                            </textarea>
+
+							</div>
+						</div>
+
+
+
+                        
+                        <button type="button" class="btn btn-primary btn-md ">&nbsp;&nbsp;&nbsp;Publicar Estacionamiento&nbsp;&nbsp;&nbsp;</button>
+
+
+					</form>
+
+                <hr/>
+				</div>
+			</div>
+		</div>
+		
+		

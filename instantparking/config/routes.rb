@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  get 'pages/que_es'
+
   root 'pages#index'
 
   get 'pages/nuevo_estacionamiento'
 
   get 'pages/cuenta'
+  
+  get 'pages/ingreso'
 
   get 'pages/nosotros'
 
@@ -12,6 +16,10 @@ Rails.application.routes.draw do
   get 'pages/tos'
 
   get 'pages/contactanos'
+  
+  get 'pages/resultado'
+  
+  get 'pages/lista_estacionamiento'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
